@@ -1,0 +1,271 @@
+
+.employer-organizations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.employer-organizations .org{
+    font-size: 1rem;
+    font-weight: 900;
+}
+.employer-organizations .create-btn{
+   background-color: #2196F3;
+   color: white;
+   padding: 9px 20px;
+   font-size: .85rem;
+   cursor: pointer;
+}
+.organization-form{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+   
+}
+#organization-form-edit{
+    position: unset;
+    top: unset;
+    width: 100%;
+    right: unset;
+    left: unset;
+    bottom: unset;
+    z-index: 2000;
+    background-color: unset;
+    display: block;
+
+}
+.organization-form.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.organization-form.show-member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.organization-form.remove-member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.organization-form.suspend-member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.organization-form.timesheet-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.organization-form .form-wrapper{
+    width: 400px;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+}
+#timesheet-table-wrapper{
+    width: 60%;
+    
+    overflow-x: scroll;
+}
+
+
+
+.organization-form .form-wrapper .form-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.organization-form .form-wrapper .form-header .title{
+    font-size: .8rem;
+    font-weight: 800;
+    text-align: center;
+}
+.organization-form .form-wrapper .form-header .icon{
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+input,textarea,select {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+select{
+    cursor: pointer;
+}
+  
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+    background-color: white;
+    font-size: .85rem;
+}
+
+.page-wrapper .apps-container .organization-card{
+    justify-content: unset;
+    position: relative;
+}
+.page-wrapper .apps-container .organization-card .chevron-card{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+.page-wrapper .apps-container .organization-card .chevron-card i{
+    font-size: 1.1rem;
+    font-weight: 800;
+    padding: 5px;
+}
+.previous{
+    font-size: .7rem;
+}
+
+
+.page-wrapper .apps-container .p-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.page-wrapper .apps-container .employee-count{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+.page-wrapper .apps-container .employee-count span{
+    font-size: .7rem;
+}
+.page-wrapper .apps-container .employee-count i{
+    font-size: .7rem;
+}
+.page-wrapper .apps-container  .p-wrapper span{
+    margin-left: 20px;
+    font-size: .8rem;
+}
+.page-wrapper .apps-container .organization-card .option-modal{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 0;
+    background-color: white;
+    top: 25px;
+    padding: 5px;
+}
+.page-wrapper .apps-container .organization-card .option-modal .option-card{
+    font-size: .8rem;
+    padding: 4px;
+    cursor: pointer;
+}
+.page-wrapper .apps-container .organization-card .option-modal .option-card:hover{
+    font-size: .8rem;
+    background-color: gainsboro;
+}
+.organization-form .form-wrapper .logo-wrapper #logo-label{
+    margin-bottom: 5px !important;
+    top: unset;
+    left: unset;
+    position: unset;
+    font-size: .8rem;
+}
+.organization-form .form-wrapper .logo-wrapper input{
+    padding: 5px;
+    margin-top: 5px;
+}
+.organization-form .btn-wrapper{
+    margin-top: 30px;
+}
+.organization-form .btn-wrapper-timesheet{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-wrapper-timesheet button{
+    background-color: #03192e;
+    color: white;
+    border: transparent;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.organization-form .btn-wrapper-timesheet button:hover{
+    background-color: #2196F3;
+}
+.organization-form .btn-wrapper button{
+    background-color: #03192e;
+}
+.organization-form .btn-wrapper button:hover{
+    background-color: #2196F3;
+}
+.organization-form .icon i{
+    font-size: 1.2rem;
+}
+
+.delete-modal-container{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+   display: none;
+}
+.delete-modal-container.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.delete-modal-container .delete-modal-wrapper{
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.delete-modal-container .delete-modal-wrapper .btn-wrapper-x{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
+}
+.delete-modal-container .delete-modal-wrapper .btn-wrapper-x button{
+    background-color: #03192e;
+    padding: 7px 20px;
+    color: white;
+    font-size: .7rem;
+    border: transparent;
+    margin-left: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.delete-modal-container .delete-modal-wrapper .btn-wrapper-x .cancel-btn{
+    padding: 7px 20px;
+    font-weight: 800;
+    font-size: .7rem;
+    border: solid #03192e 1px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:799px) {
+    #timesheet-table-wrapper{
+        width: 96%;
+        
+        overflow-x: scroll;
+    }
+}

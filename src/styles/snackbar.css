@@ -1,0 +1,100 @@
+.snackbar-success {
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    transform: translateX(-50%);
+    background-color: green;
+    color: white;
+    padding: 15px;
+    width: 150px;
+    border-radius: 4px;
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10000;
+    animation: shakeFadeOff 8s forwards; /* 3s duration, forwards to keep the final state */
+  
+    /* Additional styles for the shake effect */
+    animation-iteration-count: 1;
+  }
+.snackbar-success i{
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 6px;
+}
+.snackbar-danger i{
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 6px;
+}
+  .snackbar-danger {
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 4px;
+    display: inline-block;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10000;
+    animation: shakeFadeOff 8s forwards; /* 3s duration, forwards to keep the final state */
+  
+    /* Additional styles for the shake effect */
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes shakeFadeOff {
+    0% {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%);
+    }
+  
+    20%, 80% {
+      transform: translateX(-50%) translateX(10px);
+    }
+  
+    40%, 60% {
+      transform: translateX(-50%) translateX(-10px);
+    }
+  
+    100% {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-50%) translateX(0);
+    }
+  }
+  @keyframes shakeFadeOffMobile {
+    0% {
+      opacity: 1;
+      visibility: visible;
+     
+    }
+  
+    20%, 80% {
+      opacity: 0.8;
+    }
+  
+    40%, 60% {
+      opacity: .6;
+    }
+  
+    100% {
+      opacity: 0;
+      visibility: hidden;
+     
+    }
+  }
+
+
+@media screen and (max-width:992px){
+  .snackbar-danger,.snackbar-success{
+    animation: shakeFadeOffMobile 8s forwards; /* 3s duration, forwards to keep the final state */
+    /* Additional styles for the shake effect */
+    animation-iteration-count: unset;
+  }
+}

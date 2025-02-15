@@ -1,0 +1,9 @@
+.wrapper-form form{
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.wrapper-form form .form-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

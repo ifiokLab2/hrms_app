@@ -1,0 +1,21 @@
+.wrapper-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper-error h3{
+    color: red;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-align: center;
+}
+.error-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper-error i{
+    font-size: 2rem;
+}

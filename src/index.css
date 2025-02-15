@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: all .2s linear;
+  color: #2d2f31;
+ 
+}
+i{
+  cursor: pointer;
+}
+
+
+html,body {
+  overflow-x: hidden;
+  margin: 0;
+
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}

@@ -1,0 +1,229 @@
+
+.page-wrapper .wrapper{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.initials-cap{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    font-size: .6rem;
+    background-color: gainsboro;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.page-wrapper .wrapper .sidebar-container-1{
+    height: 100vh;
+    background-color: #03192e;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+.page-wrapper .wrapper .container-2{
+    flex: 1;
+    position: absolute;
+    left: 301px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.author-container .profile-container  .name a{
+    margin-left:12px;
+}
+.phone, .website{
+    font-size: .9rem;
+}
+.phone i, .website i{
+    margin-right: 12px;
+}
+.page-wrapper .wrapper .sidebar-container-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.page-wrapper .wrapper .sidebar-container-1 .box1-wrapper{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+.page-wrapper .wrapper .sidebar-container-1 .box1-wrapper .card{
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.page-wrapper .wrapper .sidebar-container-1 .box1-wrapper .card:hover{
+    background-color: #2196F3;
+}
+.page-wrapper .wrapper .sidebar-container-1 .box2-wrapper{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper .wrapper .sidebar-container-1 .box1-wrapper .card i{
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+
+}
+.page-wrapper .wrapper .sidebar-container-1 .box1-wrapper span:nth-child(1){
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+
+}
+.page-wrapper .wrapper .sidebar-container-1 .box1-wrapper span:nth-child(2){
+    color: white;
+    font-size: .8rem;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+
+.page-wrapper .wrapper .sidebar-container-1 .box2-wrapper .card i{
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+
+}
+.page-wrapper .wrapper .sidebar-container-1 .box2-wrapper span:nth-child(1){
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+
+}
+.page-wrapper .wrapper .sidebar-container-1 .box2-wrapper span:nth-child(2){
+    color: white;
+    font-size: .8rem;
+    font-weight: 800;
+    margin-left: 10px;
+   
+}
+
+.page-wrapper .wrapper .sidebar-container-1 .box2-wrapper .card{
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.page-wrapper .wrapper .sidebar-container-1 .box2-wrapper .card:hover{
+    background-color: #2196F3;
+}
+.page-wrapper .container-2 .container-2-wrapper{
+    padding: 20px;
+    margin-top: 90px;
+    height: 100%;
+}
+.page-wrapper .container-2 .container-2-wrapper .title{
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.page-wrapper .apps-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+   
+    grid-auto-rows: auto;
+    gap: 1.0rem;
+    margin-top: 20px;
+   
+}
+.page-wrapper .apps-container .cards{
+    text-decoration: none;
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding: 8px 20px;   
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+}
+.page-wrapper .apps-container .cards .icon{
+    margin-right: 6px;
+}
+
+.page-wrapper .apps-container .cards .title-header{
+    font-size: .8rem;
+    font-weight: 800;
+    margin-bottom: 3px;
+    
+   
+}
+
+.page-wrapper .apps-container .cards .text-wrapper{
+    width: 100%;
+}
+.page-wrapper .apps-container .cards p{
+    font-size: .65rem;
+    padding: 1px;
+    margin: 0;
+   
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+
+}
+.page-wrapper .apps-container .cards .e-icon i{
+    color: #007FFF;
+}
+.page-wrapper .apps-container .cards .p-icon i{
+    color: #66FF00;
+}
+.page-wrapper .apps-container .cards .hrms-icon i{
+    color: #00308F;
+}
+.page-wrapper .apps-container .cards .pay-icon i{
+    color: #FEBE10;
+}
+.page-wrapper .apps-container .cards .time-icon i{
+    color:#970203;
+
+}
+.page-wrapper .apps-container .cards img{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width:992px) {
+    .page-wrapper .wrapper .sidebar-container-1{
+        width: 150px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+    .page-wrapper .wrapper .container-2{
+        flex: 1;
+        position: absolute;
+        left: 160px;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+    .page-wrapper .wrapper .sidebar-container-1 .box1-wrapper span:nth-child(2){
+        color: white;
+        font-size: .7rem;
+        font-weight: 800;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:599px) {
+    .page-wrapper .wrapper .container-2{
+       left: 0;
+       top: unset;
+       bottom: unset;
+    }
+    .page-wrapper .wrapper .sidebar-container-1{
+       display: none;
+    }
+}

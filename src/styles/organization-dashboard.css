@@ -1,0 +1,211 @@
+
+.organization-header{
+    border: solid gainsboro 1px;
+    display: flex;
+    flex-wrap: nowrap;
+    
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.organization-header .box1 img{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin-right: 5px;
+}
+.organization-header .box1 .org-name{
+    font-size: 1rem;
+    font-weight: 900;
+    white-space: nowrap;
+}
+.organization-header .box1-logo{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 20px;
+}
+.organization-header .box2{
+    display: flex;
+    align-items: center;
+}
+.organization-header .box2 .tabs{
+    font-size: .7rem;
+    font-weight: 700;
+    margin-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.organization-header .box2 .tabs.active{
+    border-bottom: solid #00308F 2px;
+    color: #00308F;
+}
+.container-2-wrapper .body-title{
+    font-size: .9rem;
+    font-weight: 900;
+}
+.organization-body{
+    margin-top: 10px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.organization-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  
+  }
+.back{
+    border: solid #03192e 1px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer
+    ;
+}
+.delete-btn{
+    background-color: red;
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+}
+.organization-form table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.organization-form thead{
+    background-color: #03192e;
+    color: white;
+}
+  
+.organization-body  thead {
+    background-color: #03192e;
+    color: white;
+}
+
+.organization-body th{
+    color: white;
+    font-size: .8rem;
+}
+.organization-form th{
+    color: white;
+    font-size: .8rem;
+}
+.organization-body td{
+    font-size: .8rem;
+}
+.organization-form td{
+    font-size: .8rem;
+}
+.organization-body th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.organization-form td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+  
+.organization-body  tbody tr:hover {
+    background-color: #2196F3;
+    cursor: pointer;
+    color: white;
+}
+.organization-form tbody tr:hover{
+    background-color: #2196F3;
+    cursor: pointer;
+    color: white;
+}
+.organization-body  tbody tr:hover td{
+    color: white;
+}
+.organization-form tbody tr:hover td{
+    color: white;
+}
+.organization-body table .status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.organization-body table .status i{
+    font-size: 1rem;
+    color: #03192e;
+    padding: 2px 4px;
+}
+.organization-body .timesheet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.organization-body .table-description{
+    max-width: 200px;
+    word-break: break-all;
+}
+.organization-body .timesheet .time-btn{
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    font-size: .7rem;
+    cursor: pointer;
+}
+.body-title-wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.body-title-wrapper .tabs{
+    text-decoration:underline;
+    font-size: .8rem;
+    cursor: pointer;
+}
+.organization-body .submit-payroll-wrapper{
+    display:flex;
+    justify-content: flex-end;
+}
+.organization-body .total-salary{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.organization-body .submit-payroll-wrapper .btn{
+    background-color: #03192e;
+    margin-top: 30px;
+    padding: 8px 20px;
+    font-size: .8rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+}
+.organization-body table .status-modal{
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    left: -40px;
+    top: 20px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.organization-body table .status-modal .card{
+    cursor: pointer;
+    margin: 3px 0;
+    padding: 5px 8px;
+    
+}
+.organization-body table .status-modal .card:hover{
+    background-color: gainsboro;
+}
+
+@media screen and (max-width:600px) {
+    .organization-body .timesheet{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
